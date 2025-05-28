@@ -1,0 +1,319 @@
+/* 
+  Sub Page
+  Product
+ */
+
+.sub-page__product {}
+
+/* Vision */
+.prd_vision {
+  padding: 100rem 0;
+  height: 100vh;
+}
+.prd_vision.active {
+  background-color: var(--gray-color-900);
+  transition: 1s;
+}
+.vision_heading {}
+.vision_heading .head {
+  color: #fff;
+  font-size: 19rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.vision_line {
+  margin: 50rem 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.vision_content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+.vision_content .box {}
+.vision_content .text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  padding-right: 25%;
+}
+.vision_content .text-wrap .text-large {
+  color: var(--gray-color-300);
+  font-size: 36rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.vision_content .text-wrap .highlight {
+  color: var(--main-color-400);
+  font-size: 36rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.vision_content .text-wrap .text {
+  color: var(--gray-color-600);
+  font-size: 19rem;
+  font-weight: 400;
+}
+.vision_content .number-wrap {
+}
+.vision_content .number-wrap .num {
+  color: #fff;
+  font-size: 110rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Product Feature */
+.prd_features {
+  padding: 100rem 0;
+}
+.prd_feat-box {}
+.feat-box__head {}
+.feat-box__img {}
+.feat-box__img > img {
+  width: 100%;
+  aspect-ratio: 21/9;
+  border-radius: var(--visual-border-round-s);
+  object-fit: cover;
+}
+.feat-box__desc {
+  margin-top: 20rem;
+  display: flex;
+  gap: 20rem;
+}
+.feat-box__desc .desc-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem;
+  background-color: var(--gray-color-200);
+  border-radius: var(--visual-border-round-s);
+}
+.feat-box__desc .desc-box:hover {
+  background-color: var(--main-color-800);
+  transition: .4s;
+}
+.feat-box__desc .desc_num {}
+.feat-box__desc .desc_head {
+  margin-top: 30rem;
+  font-size: 20rem;
+  font-weight: 600;
+}
+.feat-box__desc .desc_txt {
+  margin-top: 15rem;
+}
+.feat-box__desc .desc-box:hover .desc_head {
+  color: #fff;
+  transition: .4s;
+}
+.feat-box__desc .desc-box:hover .desc_num,
+.feat-box__desc .desc-box:hover .desc_txt {
+  color: var(--gray-color-300);
+  transition: .4s;
+}
+
+/* Product Detail */
+.prd_detail-table {
+  padding: 50rem 0;
+}
+.prd_detail-table .table-wrap {
+  margin: 0 auto;
+  padding: 40rem 0;
+  max-width: min(75%, 900rem);
+}
+/* swiper slide */
+.prd_slide-section {
+  padding: 0 100rem;
+  width: 100%;
+  overflow: hidden;
+}
+.swiper__prd {
+  position: relative;
+}
+.swiper__prd .swiper-wrapper {}
+.swiper__prd .swiper-slide {}
+.swiper__prd .swiper-slide .img-box {}
+.swiper__prd .swiper-slide .img-box > img {
+  width: 100%;
+  height: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  border-radius: var(--visual-border-round);
+}
+.swiper__prd .progress {
+  position: relative;
+  width: calc(100% - 100rem);
+  height: 3px;
+  margin: 20rem auto;
+}
+.swiper__prd .progress .swiper-pagination-progressbar-fill {
+  background: var(--black-color);
+}
+
+@media (min-width: 1919px) {
+  .prd_slide-section {
+    padding: 0 calc((100% - 1300px) / 2);
+  }
+  .swiper__prd .swiper-slide .img-box > img {
+    max-height: 65vh;
+  }
+}
+
+/* Product Story */
+.prd_story {
+  position: relative;
+  height: 100vh;
+  background-color: var(--gray-color-200);
+}
+.prd_story .inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 100%;
+  z-index: 2;
+}
+.prd_story-head {
+  padding-top: 40rem;
+}
+.prd_story-head .head {
+  font-size: 55rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.prd_story-marquee {}
+
+/* Product Card */
+.prd_detail-card {
+  padding: 100rem 0;
+  background-color: #fff;
+  transition: 1s;
+}
+.prd_detail-card.active {
+  background-color: var(--black-color);
+}
+.card-wrap {
+  margin-top: 60rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30rem;
+}
+.card-item {
+  display: inline-grid;
+  transform: perspective(800rem) rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: transform .4s;
+}
+.card-item:hover {
+  transform: perspective(800rem) rotateY(180deg);
+}
+.card-front,
+.card-back {
+  position: relative;
+  grid-area: 1/1/1/1;
+  width: 100%;
+  padding: 30rem;
+  aspect-ratio: 3/4;
+  border-radius: var(--visual-border-round);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.card-front {}
+.card_bg-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.card_bg-wrap > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(.7);
+}
+.card_head-wrap {}
+.card_head-wrap .tag {
+  color: #fff;
+}
+.card_head-wrap .head {
+  color: #fff;
+  font-size: 36rem;
+  font-weight: 600;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+.card_desc-wrap {}
+.card_desc-wrap .desc {
+  margin-top: 20rem;
+  color: #fff;
+  font-size: 14rem;
+  font-weight: 300;
+}
+.card-item:nth-child(1) .card-back {
+  background-color: var(--main-color-800);
+}
+.card-item:nth-child(2) .card-back {
+  background-color: var(--main-color-500);
+}
+.card-item:nth-child(3) .card-back {
+  background-color: var(--main-color-300);
+}
+.card-back .view-more {
+  position: absolute;
+  bottom: 30rem;
+}
+
+/* Product spec */
+.prd_spec {
+  padding: 100rem 0;
+  background-color: var(--black-color);
+}
+.prd_spec.active {
+}
+.spec_table {
+  margin-top: 50rem;
+}
+.spec_table > table {
+  width: 100%;
+  color: #fff;
+  font-size: 18rem;
+  text-align: center;
+  vertical-align: middle;
+  border: var(--gray-color-700);
+}
+.spec_table > table caption {
+  margin-bottom: 15rem;
+  font-size: 22rem;
+  font-weight: 500;
+  text-align: left;
+}
+.spec_table > table th,
+.spec_table > table td {
+  padding: 20rem 10rem;
+  border: 1px solid var(--gray-color-600);
+  box-sizing: border-box;
+}
+.spec_table > table th:nth-child(1),
+.spec_table > table td:nth-child(1) {
+  border-left: 0;
+}
+.spec_table > table th:last-child,
+.spec_table > table td:last-child {
+  border-right: 0;
+}
+.spec_table > table td {
+  color: var(--gray-color-500);
+}
+.spec_table > table thead th {
+  background-color: rgba(255,255,255,.15);  
+}
+.spec_table > table tbody th {
+  background-color: rgba(255,255,255,.05);  
+}
+

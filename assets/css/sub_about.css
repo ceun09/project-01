@@ -1,0 +1,257 @@
+/* 
+  Sub Page
+  About
+ */
+
+.sub-page__about {}
+
+.sub-page__about .keyVisual-background>img {
+  object-position: bottom;
+  transform: scaleX(-1);
+}
+
+.abt_intro {
+  padding: 100rem 0 200rem;
+  background-color: var(--black-color);
+}
+
+.abt_intro .inner {
+  align-items: flex-start;
+}
+
+.abt_intro .circle-content-wrap,
+.abt_intro .content-wrap {
+  flex: 1;
+}
+
+.abt_intro .circle-content-wrap {}
+
+.abt_intro .circle-wrap {
+  position: sticky;
+  top: 30rem;
+}
+
+.abt_intro .circle-wrap.fixed {
+  width: 100%;
+  top: 0;
+}
+
+.abt_intro .circle-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500rem;
+  aspect-ratio: 1;
+}
+
+.abt_intro .circle {
+  width: 80%;
+  height: 80%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background-color: var(--main-color-100);
+}
+
+.abt_intro .circle-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 2px dashed var(--gray-color-300);
+  animation: rotate 60s linear infinite;
+}
+
+.abt_intro .circle-dot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  animation: rotate linear infinite;
+}
+
+.abt_intro .circle-dot.circle1 {
+  animation-duration: 14s;
+}
+
+.abt_intro .circle-dot.circle2 {
+  transform: rotate(60deg);
+  animation-duration: 18s;
+}
+
+.abt_intro .circle-dot .dot {
+  position: absolute;
+  border-radius: 100%;
+}
+
+.abt_intro .circle-dot.circle1 .dot {
+  left: 50%;
+  top: -6px;
+  width: 20rem;
+  height: 20rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.abt_intro .circle-dot.circle2 .dot {
+  left: 18%;
+  top: 9%;
+  width: 16rem;
+  height: 16rem;
+  background-color: var(--main-color-900);
+  border: 1px solid #fff;
+}
+
+.abt_intro .content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  margin-left: 60rem;
+  overflow: hidden;
+}
+
+.abt_intro .content-wrap .box {
+  padding: 40rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: var(--visual-border-round);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.abt_intro.active .content-wrap .box {
+  animation: show-up .6s linear 1 forwards;
+}
+
+.abt_intro.active .content-wrap .box:nth-child(2) {
+  animation-delay: .4s;
+}
+
+.abt_intro.active .content-wrap .box:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.abt_intro .content-wrap .head {
+  color: #fff;
+  font-weight: 400;
+  font-size: 36rem;
+  line-height: 1;
+}
+
+.abt_intro .content-wrap .list {
+  margin-top: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  list-style: inside;
+}
+
+.abt_intro .content-wrap .list-item {
+  color: var(--gray-color-700);
+  font-size: 18rem;
+}
+
+
+.abt_cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100rem 0;
+  background-image: url('../images/img-10.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.abt_cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 400rem;
+  background: linear-gradient(to top, transparent, var(--black-color));
+}
+
+.abt_cta::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  opacity: .6;
+}
+
+.abt_cta-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.abt_cta-graph {
+  margin-bottom: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abt_cta-graph .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 270rem;
+  height: 270rem;
+  background-color: rgba(255, 255, 255, .4);
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+.abt_cta-graph .circle:first-child {
+  margin-right: -30rem;
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.abt_cta-graph .circle:last-child {
+  margin-left: -30rem;
+  background-color: rgba(255, 255, 255, .65);
+}
+
+.abt_cta-graph .circle ._num {
+  display: inline-block;
+  padding: 6rem;
+  background-color: var(--main-color-200);
+  border-radius: 100%;
+  aspect-ratio: 1;
+}
+
+.abt_cta-graph .circle ._text {
+  color: var(--black-color);
+  font-size: 32rem;
+  font-weight: 500;
+}
+
+.abt_cta-text {}
+
+.abt_cta-text .text {
+  margin-bottom: 20rem;
+  color: #fff;
+  font-size: 27rem;
+  font-weight: 300;
+}
+
+/* 반응형 */
+@media (min-width: 1919px) {
+  .abt_cta-graph .circle {
+    width: 340rem;
+    height: 340rem;
+  }
+  .abt_cta-graph .circle ._num {
+    padding: 12rem;
+  }
+}
