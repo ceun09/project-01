@@ -1,0 +1,61 @@
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.gnb {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20rem;
+}
+.pc-nav {}
+.gnb > * {
+  padding: 10rem;
+  background-color: #222;
+  border-radius: 10rem;
+}
+.util-menu {
+  display: none;
+}
+.gnb-menu-wrap {
+  display: flex;
+}
+.gnb-menu {
+  display: flex;
+  align-items: center;
+  gap: 18rem;
+  margin-left: 10rem;
+  transition: .4s;
+}
+.gnb-menu.hidden {
+  margin: 0;
+  max-width: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.gnb-menu .menu-item {
+  
+}
+.gnb .util-menu > a,
+.gnb-menu .menu-item > a {
+  color: #fff;
+  font-weight: 400;
+}
+.gnb .fold-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 25rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22rem;
+  transition-delay: .4s;
+  transition-duration: .4s;
+  cursor: pointer;
+}
+.gnb .fold-btn.fold {
+  transform: rotate(180deg);
+}

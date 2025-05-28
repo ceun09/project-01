@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <!-- Font : Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+  <!-- Google Icon CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Custom files -->
+  <link rel="stylesheet" href="../assets/css/init.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/sub.css">
+  <script type="text/javaScript" src="../script/include.js"></script>
+  <script type="text/javaScript" src="../script/activeScroll.js"></script>
+  <script type="text/javaScript" src="../script/swiper.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <div include-html="../components/header.html"></div>
+    <!-- Sub page content -->
+    <main class="sub-page__product">
+      <!-- Key Visual -->
+      <section class="keyVisual sect_scroll">
+        <div class="keyVisual__container">
+          <div class="keyVisual-text">
+            <div class="key-text-heading">
+              <h1 class="head">Description</h1>
+            </div>
+            <div class="key-text-description">
+              <h3 class="title">Why do we recommend<br class="pc-only"> this product to you?</h3>
+              <p class="desc">We have come together to develop better technologies. Everyone strives to minimize the
+                marginalization of our communication skills by communicating for everyone. The technology we are
+                developing is making sure that while introducing the latest technologies, there are no missing parts in
+                terms of accessibility and sustainability.</p>
+              <p class="desc">To start talking about history, we have to talk about the place where our company started.
+                We created this company to build trust in customers by producing products of good quality and affordable
+                prices. And customers responded and grew their business.</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="keyVisual-background">
+            <video autoplay muted loop playsinline>
+              <source src="../assets/video/v_main.mp4">
+              </source>
+            </video>
+          </div>
+        </div>
+      </section>
+      <!-- Vision -->
+      <section class="prd_vision sect_scroll">
+        <div class="inner">
+          <div class="vision_heading">
+            <h2 class="head">Our Vision</h2>
+          </div>
+          <div class="vision_line" data-ani="scroll--show-right_exp">
+          </div>
+          <div class="vision_content">
+            <div class="text-wrap box">
+              <strong class="text-large">
+                The <span class="highlight">amazing achievements</span> we have made are revealed through numbers. It
+                shows amazing <span class="highlight"></span>technology and performance</span> that overwhelms others in
+                our field.
+              </strong>
+              <p class="text">
+                We develop technology and take on new challenges. We are willing to work hard to find better technology
+                without having to worry about numbers and statistics. Of course, there are times when numbers matter. We
+                represent it in terms of performance. We are producing outstanding results because our performance
+                always
+                exceeds expectations.
+              </p>
+            </div>
+            <div class="number-wrap box">
+              <p class="num">87%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Features -->
+      <section class="prd_features sect_scroll">
+        <article class="prd_feat-box">
+          <div class="inner-narrow">
+            <div class="feat-box__head"></div>
+            <div class="feat-box__img" data-ani="scroll--show-up">
+              <img src="../assets/images/img-7.jpg" alt="">
+            </div>
+            <div class="feat-box__desc">
+              <!-- box -->
+              <div class="desc-box" data-ani="scroll--show-up" data-delay="500">
+                <span class="desc_num">01</span>
+                <strong class="desc_head">Clients</strong>
+                <p class="desc_txt">광산용소재 사업은 메이저 광산을 주요 고객사로 하여 청화소다, 그라인딩미디어, 고분자 응집제, 광산용 타이어 등 광산에서 필요로 하는 화학품 및 소재를
+                  판매하고 있습니다.</p>
+              </div>
+              <!-- box -->
+              <div class="desc-box" data-ani="scroll--show-up" data-delay="700">
+                <span class="desc_num">02</span>
+                <strong class="desc_head">Traders</strong>
+                <p class="desc_txt">고객 맞춤형 미드 스트림 기능 제공을 통해 안정적인 상권을 구축하며 글로벌 Top 트레이더로 성장하고 있습니다.</p>
+              </div>
+              <!-- box -->
+              <div class="desc-box" data-ani="scroll--show-up" data-delay="1000">
+                <span class="desc_num">03</span>
+                <strong class="desc_head">Global Missions</strong>
+                <p class="desc_txt">고객 맞춤형 미드 스트림 기능 제공을 통해 안정적인 상권을 구축하며 글로벌 Top 트레이더로 성장하고 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Detail Table -->
+      <section class="prd_detail-table sect_scroll">
+        <div class="prd_slide-section" data-ani="scroll--show-up" data-delay="700">
+          <!-- swiper -->
+          <div class="swiper__prd">
+            <div class="swiper-wrapper">
+              <!-- slides -->
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="../assets/images/img-15.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="../assets/images/img-14.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img-box">
+                  <img src="../assets/images/img-13.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="table-wrap " data-ani="scroll--show-up">
+          <h2 class="table-head">세부사항</h2>
+          <ul class="table-list_feat">
+            <li class="table-list_feat-item">
+              <dl class="detail">
+                <dt class="d-title">외형 및 무게</dt>
+                <dd class="d-desc">280 * 305 * 128 / 5</dd>
+              </dl>
+            </li>
+            <li class="table-list_feat-item">
+              <dl class="detail">
+                <dt class="d-title">AC 입력</dt>
+                <dd class="d-desc">최대전압 220V</dd>
+              </dl>
+              <dl class="detail">
+                <dt class="d-title">DC 출력력</dt>
+                <dd class="d-desc">최대전류류 32A</dd>
+              </dl>
+              <dl class="detail">
+                <dt class="d-title">동작온도</dt>
+                <dd class="d-desc">-10&#8451 ~ 40&#8451</dd>
+              </dl>
+            </li>
+            <li class="table-list_feat-item">
+              <dl class="detail">
+                <dt class="d-title">인증</dt>
+                <dd class="d-desc">KC 인증, 형식 인증</dd>
+              </dl>
+              <dl class="detail">
+                <dt class="d-title">보호기능</dt>
+                <dd class="d-desc">과전류보호, 접지사고보호</dd>
+              </dl>
+              <dl class="detail">
+                <dt class="d-title">표시장치</dt>
+                <dd class="d-desc">충전량, 경과시간, 고장내용</dd>
+              </dl>
+              <dl class="detail">
+                <dt class="d-title">충전기능표준</dt>
+                <dd class="d-desc">ABC H7204</dd>
+              </dl>
+            </li>
+          </ul>
+          <dl></dl>
+        </div>
+        <div class="inner-narrow">
+        </div>
+      </section>
+      <!-- Story -->
+      <section class="prd_story sect_scroll">
+        <div class="grid-background" aria-hidden="true">
+          <div class="inner">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="prd_story-head">
+            <h2 class="head">
+              We strive for <br class="pc-only"> better<br class="pc-only"> development
+            </h2>
+          </div>
+          <div class="prd_story-marquee marquee-wrap">
+            <div class="marquee-inner">
+              <div class="marquee-items">
+                <div class="item"><img src="../assets/images/img-6.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-8.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-7.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-5.jpg" alt=""></div>
+              </div>
+              <div aria-hidden="true" class="marquee-items">
+                <div class="item"><img src="../assets/images/img-6.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-8.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-7.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-5.jpg" alt=""></div>
+              </div>
+              <div aria-hidden="true" class="marquee-items">
+                <div class="item"><img src="../assets/images/img-6.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-8.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-7.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-5.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="marquee-inner marquee-reverse">
+              <div class="marquee-items">
+                <div class="item"><img src="../assets/images/img-3.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-9.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-1.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-10.jpg" alt=""></div>
+              </div>
+              <div aria-hidden="true" class="marquee-items">
+                <div class="item"><img src="../assets/images/img-3.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-9.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-1.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-10.jpg" alt=""></div>
+              </div>
+              <div aria-hidden="true" class="marquee-items">
+                <div class="item"><img src="../assets/images/img-3.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-9.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-1.jpg" alt=""></div>
+                <div class="item"><img src="../assets/images/img-10.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Card -->
+      <section class="prd_detail-card sect_scroll">
+        <div class="inner-narrow">
+          <div class="sub_sect-head">
+            <h2 class="head">Description of the process</h2>
+          </div>
+          <div class="card-wrap">
+            <!-- card item -->
+            <div class="card-item" data-ani="scroll--show-up" data-delay="200">
+              <div class="card-front">
+                <div class="card_bg-wrap">
+                  <img src="../assets/images/img-2.jpg" alt="">
+                </div>
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+                <div class="card_desc-wrap">
+                  <p class="desc">
+                    We take great pride in the production of our products. All the products we produce can guarantee
+                    quality, and use tests are being conducted in many ways.
+                  </p>
+                </div>
+                <a class="view-more" href="#none"><span>View More</span></a>
+              </div>
+            </div>
+            <!-- card item -->
+            <div class="card-item" data-ani="scroll--show-up" data-delay="700">
+              <div class="card-front">
+                <div class="card_bg-wrap">
+                  <img src="../assets/images/img-5.jpg" alt="">
+                </div>
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+                <div class="card_desc-wrap">
+                  <p class="desc">
+                    We take great pride in the production of our products. All the products we produce can guarantee
+                    quality, and use tests are being conducted in many ways.
+                  </p>
+                </div>
+                <a class="view-more" href="#none"><span>View More</span></a>
+              </div>
+            </div>
+            <!-- card item -->
+            <div class="card-item" data-ani="scroll--show-up" data-delay="1000">
+              <div class="card-front">
+                <div class="card_bg-wrap">
+                  <img src="../assets/images/img-4.jpg" alt="">
+                </div>
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card_head-wrap">
+                  <p class="tag">Head</p>
+                  <h4 class="head">Heading</h4>
+                </div>
+                <div class="card_desc-wrap">
+                  <p class="desc">
+                    We take great pride in the production of our products. All the products we produce can guarantee
+                    quality, and use tests are being conducted in many ways.
+                  </p>
+                </div>
+                <a class="view-more" href="#none"><span>View More</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Spec -->
+      <section class="prd_spec sect_scroll">
+        <div class="inner-narrow">
+          <div class="sub_sect-head">
+            <h2 class="head">Spec</h2>
+          </div>
+          <div class="spec-wrap">
+            <article class="spec_table">
+              <table>
+                <caption>
+                  타사 제품과의 비교
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">분류</th>
+                    <th scope="col" colspan="2">A 제품</th>
+                    <th scope="col">B 제품</th>
+                    <th scope="col">타사 제품</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">제품 중량</th>
+                    <td colspan="2">80</td>
+                    <td>100</td>
+                    <td>150</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">제품 평가치</th>
+                    <td colspan="4">Best Grade</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">제공 옵션</th>
+                    <td>Bluetooth</td>
+                    <td>고속 충전</td>
+                    <td>Bluetooth</td>
+                    <td>유선 충전</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+            <article class="spec_table">
+              <table>
+                <caption>제품 세부 스펙</caption>
+                <tr>
+                  <th>모델명</th>
+                  <td>MDR-48000</td>
+                </tr>
+                <tr>
+                  <th>제품 사이즈</th>
+                  <td>16mm * 48mm</td>
+                </tr>
+                <tr>
+                  <th>호환 타입</th>
+                  <td>USB C-type / A-type</td>
+                </tr>
+                <tr>
+                  <th>최고 해상도</th>
+                  <td>4K FHD, super AMOLED</td>
+                </tr>
+                <tr>
+                  <th>운영체제</th>
+                  <td>Android, MAC, Renux</td>
+                </tr>
+                <tr>
+                  <th>Bluetooth</th>
+                  <td>최상위 호환</td>
+                </tr>
+                <tr>
+                  <th>멀티태스킹</th>
+                  <td>무료 제공</td>
+                </tr>
+              </table>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <div include-html="../components/footer.html"></div>
+  </div>
+</body>
+<script>includeHTML();</script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sub page template</title>
+  <!-- Font : Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+  <!-- Google Icon CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <!-- Custom files -->
+  <link rel="stylesheet" href="../assets/css/init.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/sub.css">
+  <script type="text/javaScript" src="../script/include.js"></script>
+  <script type="text/javaScript" src="../script/activeScroll.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- Header -->
+    <div include-html="../components/header.html"></div>
+    <!-- Sub page content -->
+    <main class="subPage">
+      <section class="keyVisual sect_scroll">
+        <div class="video-container">
+          <div class="keyVisual-text">
+            <div class="key-text-heading">
+              <h1 class="head">Description</h1>
+            </div>
+            <div class="key-text-description">
+              <h3 class="title">Why do we recommend<br class="pc-only"> this product to you?</h3>
+              <p class="desc">We have come together to develop better technologies. Everyone strives to minimize the
+                marginalization of our communication skills by communicating for everyone. The technology we are
+                developing is making sure that while introducing the latest technologies, there are no missing parts in
+                terms of accessibility and sustainability.</p>
+              <p class="desc">To start talking about history, we have to talk about the place where our company started. We created this company to build trust in customers by producing products of good quality and affordable prices. And customers responded and grew their business.</p>
+            </div>
+          </div>
+          <div class="keyVisual-background">
+            <video autoplay muted loop playsinline>
+              <source src="../assets/video/v_main.mp4">
+              </source>
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <div include-html="../components/footer.html"></div>
+  </div>
+</body>
+<script>includeHTML();</script>
+
+</html>
