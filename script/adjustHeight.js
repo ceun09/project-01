@@ -17,7 +17,6 @@ const adjustHeight = () => {
   if(copyElement == null) return;
 
   window.addEventListener('scroll', () => {
-    console.log('hey')
     targetElement.style.height = heightValue + 'px';
   })
 }

@@ -4,8 +4,8 @@ window.addEventListener('load', () => {
   useTab();           // 탭 메뉴
   useTextEffect();    // 텍스트 한 글자씩 효과 넣기
   useChangeColor();   // 색상 자동 변환
-  // useChangeCursor();  // 특정 영역에서 마우스 커서 변경
-  useSliderHeight();  // slider 높이 길이 고정정
+  useSliderHeight();  // slider 높이 길이 고정
+  ctaTrigger();
 })
 
 const useAnchor = () => {
@@ -127,39 +127,6 @@ const useChangeColor = () => {
   }
 }
 
-const useChangeCursor = () => {
-  const myCursor = document.querySelector('.cursor_drag');
-  const section = document.querySelector('.pro_slider-wrap');
-
-  // 데이터 유효성 검사
-  if(myCursor == null) return;
-  if(section == null) return;
-
-  // 커서 활성화
-  const handleMouseIn = (e) => {
-    document.body.classList.add('cursor-none');
-    myCursor.classList.add('active');
-
-    // 커서 위치 지정
-    myCursor.style.left = e.pageX + 'px';
-    myCursor.style.top = e.pageY + 'px';
-  }
-
-  // 커서 비활성화
-  const handleMouseOut = (e) => {
-    document.body.classList.remove('cursor-none');
-    myCursor.classList.remove('active');
-  }
-
-  section.addEventListener('mousemove', handleMouseIn);
-  section.addEventListener('click', handleMouseIn);
-  section.addEventListener('mousedown', handleMouseIn);
-  section.addEventListener('scroll', handleMouseIn);
-  section.addEventListener('wheel', handleMouseIn);
-
-  section.addEventListener('mouseout', handleMouseOut);
-}
-
 const useSliderHeight = () => {
   const section = document.querySelector('.mainProgram')
   const slider = document.querySelector('.pro_slider-wrap');
@@ -184,3 +151,40 @@ const useSliderHeight = () => {
 
   window.addEventListener('resize', checkHeight);
 }
+
+const ctaTrigger = () => {
+  // CTA 전체 영역
+  const section = document.querySelector('.trigger__section');
+  
+  // Trigger 작용하는 버튼 부분
+  const triggerBtn = section.querySelector('.trigger__btn');
+
+  // 유효성 검사
+  if(section == null) return;
+
+
+  triggerBtn.addEventListener('mouseover', () => {
+    triggerFunc();
+  })
+
+  triggerBtn.addEventListener('mouseout', () => {
+    resetFunc();
+  })
+
+  const triggerFunc = () => {
+    // active 클래스 부여
+    section.classList.add('active');
+
+    // 색 변경
+    triggerBtn.classList.add('btn_white');
+  } 
+
+  const resetFunc = () => {
+    // active 클래스 삭제
+    section.classList.remove('active');
+
+    // 색 변경
+    triggerBtn.classList.remove('btn_white');
+  }
+}
+
