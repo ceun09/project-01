@@ -445,7 +445,7 @@
   margin-top: 100rem;
   display: flex;
   gap: 100rem;
-  min-height: min(36vw, 550rem);
+  min-height: min(36vw, 520rem);
   background-color: #fff;
   border-radius: var(--visual-border-round);
   overflow: hidden;
@@ -513,11 +513,7 @@
 
 /* Program */
 .mainProgram {
-  padding: 100rem 0;
-}
-.pro_head-wrap,
-.pro_slider-wrap {
-  padding: 0 20rem;
+  padding: 100rem 20rem;
 }
 .pro_head-wrap {
   display: flex;
@@ -836,6 +832,18 @@
 }
 
 /* 반응형 */
+@media (max-width: 1537px) {
+  .mainVision {
+    margin: 0 auto;
+    max-width: 1244px;
+  }
+  .mainProduct {
+    padding: 80rem calc((100% - var(--content-width)) / 2) 100rem;
+  }
+  .mainProgram {
+    padding: 100rem calc((100% - var(--content-width)) / 2);
+  }
+}
 @media (max-width: 1440px) {
   .cont_text-wrap .desc {
     font-size: 16rem;
