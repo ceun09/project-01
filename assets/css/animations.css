@@ -145,3 +145,10 @@
     transform: translateY(calc(-100% - var(--marquee-gap)));
   }
 }
+
+/* 반응형 */
+@media (max-width: 1537px) {
+  .marquee-items .item {
+    width: 250rem;
+  }
+}

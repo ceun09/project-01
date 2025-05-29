@@ -5,10 +5,10 @@
 
 .cont_address {}
 .address-box {
-  margin: 60rem 0;
+  margin: 100rem 0 60rem;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 60rem;
+  gap: 100rem;
 }
 .address-text-wrap {}
 .address-text-wrap .head-box {
@@ -155,4 +155,12 @@
 }
 .staff-box .sns-box .sns-icon:hover::before {
   transform: translate(-50%,-50%) scale(1);
+}
+
+/* 반응형 */
+@media (max-width: 1537px) {
+  .cont_address .inner,
+  .cont_staff .inner {
+    max-width: var(--content-width--narrow);
+  }
 }

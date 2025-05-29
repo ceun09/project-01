@@ -72,6 +72,8 @@ table {
 }
 
 :root {
+  --content-width: 1400px;
+  --content-width--narrow: 900px;
   --marquee-gap: 25rem;
   /* Colors */
   --white-color: #FFFFFF;
@@ -102,12 +104,12 @@ table {
 .wrap {}
 .inner {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: var(--content-width);
   position: relative;
 }
 .inner-narrow {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: var(--content-width--narrow);
   position: relative;
 }
 .inner__flex-row {
@@ -154,30 +156,30 @@ table {
 
 /* 반응형 */
 @media screen and (min-width: 1919px) {
+  :root {
+    --content-width: 1680px;
+    --content-width--narrow: 1244px;
+  }
   html {
     font-size: 0.05;
   }
-  .inner {
-    max-width: 1680px;
-  }
-  .inner-narrow {
-    max-width: 1244px;
-  }
 }
-@media screen and (min-width: 1537px) {
+@media screen and (max-width: 1537px) {
+  :root {
+    --content-width: 1440px;
+    --content-width--narrow: 1244px;
+  }
   html {
     font-size: 0.069444444vw;
   }
 }
 @media screen and (max-width: 1360px) {
+  :root {
+    --content-width: 85%;
+    --content-width--narrow: 75%;
+  }
   html {
     font-size: 0.06756756756756757vw;
-  }
-  .inner {
-    max-width: 85%;
-  }
-  .inner-narrow {
-    max-width: 75%;
   }
 }
 @media screen and (max-width: 1023px) {
