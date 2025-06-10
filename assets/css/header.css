@@ -59,3 +59,16 @@ header {
 .gnb .fold-btn.fold {
   transform: rotate(180deg);
 }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gnb .util-menu > a, .gnb-menu .menu-item > a {
+    font-size: 24rem;
+  }
+}
+@media (max-width: 540px) {
+  .gnb {
+    display: none;
+  }
+}
